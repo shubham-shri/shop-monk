@@ -29,7 +29,7 @@ export default class SignIn extends Component {
             name="email"
             value={this.state.email}
             handleChange={this.handleChange}
-            onchange={this.handleChange}
+            onChange={this.handleChange}
             label="email"
             required
           />
@@ -37,7 +37,7 @@ export default class SignIn extends Component {
             name="password"
             value={this.state.password}
             handleChange={this.handleChange}
-            onchange={this.handleChange}
+            onChange={this.handleChange}
             label="password"
             required
           />
