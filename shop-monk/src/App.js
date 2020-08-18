@@ -10,7 +10,6 @@ import { auth, createUserProfileDocument } from './firebase/firebase.utils'
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component'
 import { setCurrentUser } from './redux/user/user.action'
 import { selectCurrentUser } from './redux/user/user.selectors'
-
 import './App.css'
 
 class App extends Component {
