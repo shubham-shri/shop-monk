@@ -1,0 +1,23 @@
+.sign-in {
+  display: flex;
+  justify-content: center;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-width: 375px;
+  }
+
+  .title {
+    margin: 10px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .margin-small {
+    margin: 10px;
+  }
+}

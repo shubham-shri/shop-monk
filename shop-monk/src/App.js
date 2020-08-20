@@ -2,12 +2,13 @@ import React, { Component } from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
+import withLayout from './components/withLayout/withLayout.component'
 import HomePage from './pages/homepage/homepage.component'
 import ShopPage from './pages/shop/shop.component'
 import CheckoutPage from './pages/checkout/checkout.component'
-import Header from './components/header/header.component'
+import SignIn from './pages/sign-in/sign-in.component.jsx'
+import SignUp from './pages/sign-up/sign-up.component.jsx'
 import { auth, createUserProfileDocument } from './firebase/firebase.utils'
-import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component'
 import { setCurrentUser } from './redux/user/user.action'
 import { selectCurrentUser } from './redux/user/user.selectors'
 import './App.css'
@@ -34,22 +35,24 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/shop" component={ShopPage} />
-          <Route exact path="/checkout" component={CheckoutPage} />
           <Route
             exact
             path="/signin"
             render={() =>
-              this.props.currentUser ? (
-                <Redirect to="/" />
-              ) : (
-                <SignInAndSignUpPage />
-              )
+              this.props.currentUser ? <Redirect to="/" /> : <SignIn />
             }
           />
+          <Route
+            exact
+            path="/signup"
+            render={() =>
+              this.props.currentUser ? <Redirect to="/" /> : <SignUp />
+            }
+          />
+          <Route exact path="/" component={withLayout(HomePage)} />
+          <Route path="/shop" component={withLayout(ShopPage)} />
+          <Route exact path="/checkout" component={withLayout(CheckoutPage)} />
           <HomePage />
         </Switch>
       </div>

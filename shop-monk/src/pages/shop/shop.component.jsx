@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route } from 'react-router-dom'
+import { Route, withRouter } from 'react-router-dom'
 import { createStructuredSelector } from 'reselect'
 import { connect } from 'react-redux'
 import { fetchCollectionsStartAsync } from '../../redux/shop/shop.actions'
@@ -54,4 +54,7 @@ const mapStateToProps = createStructuredSelector({
 const mapDispatchToProps = (dispatch) => ({
   fetchCollectionsStartAsync: () => dispatch(fetchCollectionsStartAsync()),
 })
-export default connect(mapStateToProps, mapDispatchToProps)(ShopPage)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(withRouter(ShopPage))
