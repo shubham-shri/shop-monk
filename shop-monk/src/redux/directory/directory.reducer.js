@@ -1,8 +1,9 @@
 const INITIAL_STATE = {
   sections: [
     {
-      title: 'hats',
-      imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+      title: 'Hats',
+      imageUrl:
+        'https://images.bewakoof.com/t320/black--neon-green-90-s-vibe-panel-t-shirt-men-s-90-s-vibe-half-sleeves-plain-two-panel-t-shirt-264042-1581165975.jpg',
       id: 1,
       linkUrl: 'shop/hats',
     },
