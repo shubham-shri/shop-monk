@@ -16,6 +16,9 @@ a {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body,
 #root,
@@ -26,5 +29,4 @@ body,
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  backround: red;
 }
