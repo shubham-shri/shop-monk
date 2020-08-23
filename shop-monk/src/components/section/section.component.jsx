@@ -7,17 +7,17 @@ export default class SectionPage extends Component {
     console.log(this.props)
     return (
       <div className="section-container">
-        <div className="section-container__banner">
-          <img className="banner-image" src={coverImage} alt="banner" />
+        <div className="banner">
+          <img className="banner__image" src={coverImage} alt="banner" />
         </div>
-        <div className="section-container__heading">Browse</div>
-        <div className="section-container__sub-section-container">
+        <div className="section__heading">Browse</div>
+        <div className="sub-section-container">
           {subSections.map((section) => (
-            <div className="section-container__sub-section-container__sub-section">
-              {section.title}
-              <div className="section-container__sub-section-container__sub-section__item-container">
+            <div className="">
+              <div className="sub-section__heading">{section.title}</div>
+              <div className="sub-section__item-container">
                 {section.categorySection.map((category) => (
-                  <div className="section-container__sub-section-container__sub-section__item-container__item">
+                  <div className="sub-section__item-container__item">
                     <div>
                       <img
                         className="category-image"

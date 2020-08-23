@@ -7,11 +7,13 @@ import CheckoutPage from './pages/checkout/checkout.component'
 import SignIn from './pages/sign-in/sign-in.component.jsx'
 import SignUp from './pages/sign-up/sign-up.component.jsx'
 import MenSectionPage from './pages/men-section/men-section.component'
+import WomenSectionPage from './pages/women-section/women-section.component'
 
 const HomePageWithLayout = withLayout(HomePage)
 const ShopPageWithLayout = withLayout(ShopPage)
 const CheckoutPageWithLayout = withLayout(CheckoutPage)
 const MenSectionPageWithLayout = withLayout(MenSectionPage)
+const WomenSectionPageWithLayout = withLayout(WomenSectionPage)
 
 const RoutesComponent = (props) => {
   const { currentUser } = props
@@ -55,6 +57,17 @@ const RoutesComponent = (props) => {
         render={() =>
           currentUser ? (
             <MenSectionPageWithLayout sectionName="men" />
+          ) : (
+            <Redirect to="/signin" />
+          )
+        }
+      />
+      <Route
+        exact
+        path="/women"
+        render={() =>
+          currentUser ? (
+            <WomenSectionPageWithLayout sectionName="women" />
           ) : (
             <Redirect to="/signin" />
           )

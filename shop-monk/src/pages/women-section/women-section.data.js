@@ -1,5 +1,6 @@
-const MEN_SECTION_DATA = {
-  coverImage: 'https://onlinecitymarket.com/wp-content/uploads/2018/09/209.jpg',
+const WOMEN_SECTION_DATA = {
+  coverImage:
+    'https://cdn.shopify.com/s/files/1/0114/6168/9401/files/BB-Hm-Pg-Hero-Banner-NOV19-1800x693.jpg?v=1573616689',
   subSections: [
     {
       title: 'Top Wear',
@@ -7,19 +8,19 @@ const MEN_SECTION_DATA = {
         {
           categoryName: 'T-Shirts',
           categoryImage:
-            'https://images.bewakoof.com/nav_menu/bewakoof-men-topwear-half-sleeve-1592456875.png',
+            'https://images.bewakoof.com/nav_menu/Difficult-Roads-Boyfriend-T-Shirt-1592822447.png',
           link: '',
         },
         {
-          categoryName: 'Shirts',
+          categoryName: 'Dresses',
           categoryImage:
-            'https://images.bewakoof.com/nav_menu/bewakoof-men-topwear-shirt-1592456878.png',
+            'https://images.bewakoof.com/nav_menu/Deep-Purple-Cap-Sleeve-Plain-T-Shirt-Dress-1592822446.png',
           link: '',
         },
         {
           categoryName: 'Jackets',
           categoryImage:
-            'https://images.bewakoof.com/nav_menu/bewakoof-men-topwear-icon-jacket-1592456877.png',
+            'https://images.bewakoof.com/nav_menu/Dab-Panda-Badge-Zipper-Bomber-Jacket-1592822445.png',
           link: '',
         },
       ],
@@ -34,13 +35,13 @@ const MEN_SECTION_DATA = {
           link: '',
         },
         {
-          categoryName: 'Boxers',
+          categoryName: 'Pyjamas',
           categoryImage:
             'https://images.bewakoof.com/nav_menu/men-pyjamas-bewakoof-navigation-1587710414.png',
           link: '',
         },
         {
-          categoryName: 'Pyjamas',
+          categoryName: 'Boxers',
           categoryImage:
             'https://images.bewakoof.com/nav_menu/neon-ornage-guys-boxer-front-icon-1593513957.png',
           link: '',
@@ -50,4 +51,4 @@ const MEN_SECTION_DATA = {
   ],
 }
 
-export default MEN_SECTION_DATA
+export default WOMEN_SECTION_DATA
