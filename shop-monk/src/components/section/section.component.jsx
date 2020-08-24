@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import './section.styles.scss'
 
-export default class SectionPage extends Component {
+class SectionPage extends Component {
   render() {
     const { coverImage, subSections } = this.props.sectionData
     console.log(this.props)
@@ -17,7 +18,10 @@ export default class SectionPage extends Component {
               <div className="sub-section__heading">{section.title}</div>
               <div className="sub-section__item-container">
                 {section.categorySection.map((category) => (
-                  <div className="sub-section__item-container__item">
+                  <div
+                    className="sub-section__item-container__item"
+                    onClick={() => this.props.history.push(category.link)}
+                  >
                     <div>
                       <img
                         className="category-image"
@@ -38,3 +42,5 @@ export default class SectionPage extends Component {
     )
   }
 }
+
+export default withRouter(SectionPage)

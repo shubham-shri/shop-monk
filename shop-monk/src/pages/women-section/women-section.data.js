@@ -31,19 +31,19 @@ const WOMEN_SECTION_DATA = {
         {
           categoryName: 'Joggers',
           categoryImage:
-            ' https://images.bewakoof.com/nav_menu/light-blue--denim-guys-jogger-display-icon-1592576675.png',
+            'https://images.bewakoof.com/nav_menu/Neon-Orange-Casual-Jogger-Pants-1592822449.png',
           link: '',
         },
         {
           categoryName: 'Pyjamas',
           categoryImage:
-            'https://images.bewakoof.com/nav_menu/men-pyjamas-bewakoof-navigation-1587710414.png',
+            'https://images.bewakoof.com/nav_menu/women-pyjamas-bewakoof-navigation-1587707321.png',
           link: '',
         },
         {
           categoryName: 'Boxers',
           categoryImage:
-            'https://images.bewakoof.com/nav_menu/neon-ornage-guys-boxer-front-icon-1593513957.png',
+            'https://images.bewakoof.com/nav_menu/navi-boxer-women-1593530274.png',
           link: '',
         },
       ],
